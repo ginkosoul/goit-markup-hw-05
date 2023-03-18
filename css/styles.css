@@ -73,7 +73,8 @@ h1,h2,h3,h4,p{
     color: var(--dark-theme-text-color);
 
     background-color: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
@@ -81,6 +82,7 @@ h1,h2,h3,h4,p{
 .order-servise-btn:focus,
 .order-servise-btn:hover{
     background-color: var(--active-order-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter-btn{
@@ -157,7 +159,6 @@ h1,h2,h3,h4,p{
 .menu-link{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 
     font-weight: 500;
     font-size: 16px;
@@ -180,7 +181,6 @@ h1,h2,h3,h4,p{
     margin-bottom: -1px;
     height: 4px;
     width: 100%;
-    /* background-color: inherit; */
     border-radius: 2px;
 }
 .address-block{
